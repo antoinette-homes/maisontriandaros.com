@@ -2,43 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.com/fr/</loc>
+    <loc>https://maisontriandaros.com/fr/</loc>
     <lastmod>2021-02-13T17:48:54+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.com/"
+                href="https://maisontriandaros.com/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://example.com/fr/"
+                href="https://maisontriandaros.com/fr/"
                 />
   </url><url>
-    <loc>http://example.com/fr/blog/</loc>
+    <loc>https://maisontriandaros.com/fr/blog/</loc>
     <lastmod>2021-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.com/blog/"
+                href="https://maisontriandaros.com/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://example.com/fr/blog/"
+                href="https://maisontriandaros.com/fr/blog/"
                 />
   </url><url>
-    <loc>http://example.com/fr/reservations/</loc>
+    <loc>https://maisontriandaros.com/fr/reservations/</loc>
     <lastmod>2021-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.com/reservations/"
+                href="https://maisontriandaros.com/reservations/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://example.com/fr/reservations/"
+                href="https://maisontriandaros.com/fr/reservations/"
                 />
   </url>
 </urlset>
