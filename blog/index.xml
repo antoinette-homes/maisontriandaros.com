@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reservations on Maison triandaros</title>
+    <link>http://example.com/blog/</link>
+    <description>Recent content in Reservations on Maison triandaros</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Made with ❤ by Digital Marketing Impulse - Swiss-based digital marketing agency in La Neuveville - &lt;a href=&#34;www.digitalmarketingimpulse.ch&#34;&gt;www.digitalmarketingimpulse.ch&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 12 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://example.com/blog/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
