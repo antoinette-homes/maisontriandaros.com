@@ -1,0 +1,6 @@
+---
+title: "Blog"
+date: 2021-02-12
+tags: []
+url: "/fr/blog/"
+---

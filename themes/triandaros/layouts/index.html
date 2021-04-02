@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+  <header class="title row">
+    <h1>MAISON TRIANDAROS</h1>
+    <h2>Tinos la merveilleuse</h2>
+    <hr/>
+  </header>
+
+  {{ .Content }}
+{{ end }}
+
+{{ define "head" }}
+  {{ partial "head-additions.html" . }}
+{{ end }}
+
+{{ define "footer" }}
+  <script src="/js/rellax.min.js"></script>
+  <script>var rellax = new Rellax('.rellax');</script>
+  {{ partialCached "site-footer.html" . }}
+{{ end }}

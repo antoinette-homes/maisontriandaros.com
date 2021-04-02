@@ -1,0 +1,100 @@
+.flex-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu {
+    font-size: 14px;
+    li {
+        a {
+            color: rgb(245, 245, 245);
+            text-decoration: none;
+            padding: 15px 25px;
+        }
+        box-sizing: border-box;
+        display: inline-flex;
+        position: relative;
+
+
+        &:hover {
+            .sub-menu {
+                display: block;
+            }
+        }
+
+        .sub-menu {
+            display: none;
+            position: absolute;
+            background-color: $bg-black;
+            top: 100%;
+            left: 0;
+        }
+    }
+}
+
+.menu-main {
+    li {
+        &:hover a {
+            color: rgb(218, 218, 218);
+            transition: color 0.4s ease 0s;
+        }
+    }
+}
+
+.menu-reserve {
+    li a {
+        color: white;
+    }
+}
+
+.menu-activate {
+    display: none;
+}
+
+.btn-black, .btn-white {
+    display: inline-flex;
+    a {
+        padding: 15px 30px;
+        text-decoration: none;
+        font-weight: 700;
+    }
+}
+
+.btn-white {
+    border: 1px solid black;
+    color: rgb(245, 245, 245);
+
+    &:hover {
+        background-color: black;
+        transition: background-color 0.4s ease 0s;
+        a {
+            color: white;
+            transition: color 0.4s ease 0s;
+        }
+    }
+}
+.btn-black {
+    border: 1px solid white;
+    color: rgb(245, 245, 245);
+
+    &:hover {
+        background-color: white;
+        transition: background-color 0.4s ease 0s;
+        a {
+            color: rgb(0, 0, 0);
+            transition: color 0.4s ease 0s;
+        }
+    }
+}
+
+.translations {
+    padding: 5px;
+    flex-direction: row-reverse;
+    font-style: italic;
+
+    a {
+        color: rgb(10, 10, 10);
+        text-decoration: none;
+    }
+}

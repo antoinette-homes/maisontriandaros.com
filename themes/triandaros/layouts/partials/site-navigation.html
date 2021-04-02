@@ -1,0 +1,52 @@
+<nav class="site-navigation" role="navigation">
+  <div class="page-links flex-l  items-center center">
+    <div class="row flex-l items-center justify-between">
+      {{ if .Site.Menus.main }}
+      <div class="menu-wrapper">
+        <input type="checkbox" class="menu-activate">
+        <ul class="flex-list menu menu-main">
+          {{ range .Site.Menus.main }}
+          {{ if .HasChildren }}
+          <li class="">
+            <a class="" href="{{ .URL }}" title="{{ .Name }}">
+              {{ .Name }}
+            </a>
+            <ul class="sub-menu flex-list">
+              {{ range .Children }}
+                  <li class="">
+                      <a href="{{ .URL }}">{{ .Name }}</a>
+                  </li>
+              {{ end }}
+            </ul>
+          </li>
+          {{ else }}
+          <li class="">
+            <a class="" href="{{ .URL }}" title="{{ .Name }}">
+              {{ .Name }}
+            </a>
+          </li>
+          {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+      {{ if .Site.Menus.reserve }}
+      <div class="menu-wrapper">
+        <ul class="flex-list menu menu-reserve">
+          {{ range .Site.Menus.reserve }}
+          <li class="btn-black">
+            <a class="" href="{{ .URL }}" title="{{ .Name }}">
+              {{ .Name }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+      {{ partialCached "social-follow.html" . }}
+    </div>
+  </div>
+  <div class="page-top">
+    {{ partial "i18nlist.html" . }}
+  </div>
+</nav>

@@ -1,0 +1,26 @@
+<footer class="site-footer" role="contentinfo">
+  <section class="row">
+    <a class="anchor" id="contact"></a>
+    <h1>CONTACT</h1>
+    <div class="flex justify-around">
+      <p class="tl">tinos.moeckli@gmail.com</p>
+      <p class="tc">
+        Tinos, Triandaros,Grèce<br />
+        L'adresse exacte vous sera envoyée par email
+      </p>
+      <p class="tr">
+        Tél: +41  79 644 63 83 (CH)<br />
+        +30 69 468 293 19 (GR)<br />
+        +30 22 830 420 64 (GR)
+      </p>
+    </div>
+  </section>
+  <div id="map">
+    <a href="https://goo.gl/maps/urBVz9zt9YU3NUG16"><img src="https://api.mapbox.com/styles/v1/mapbox/light-v10/static/pin-l+da1010(25.191867882791165,37.55950858936957)/25.1915,37.5615,12.5,0/1000x630@2x?access_token=pk.eyJ1IjoidGhydWRodmFuZ3IiLCJhIjoiY2ttbWlqaHUyMWxpdTJwcWtvYjR2azc3diJ9.CfYfjAWpG6bihaOa6yqPAQ"></a>
+  </div>
+
+  <div class="site-copyright">
+    <div class="row">{{ with .Site.Copyright }} {{ . | safeHTML }} {{ end }}</div>
+    <div>{{ partial "social-follow.html" . }}</div>
+  </div>
+</footer>

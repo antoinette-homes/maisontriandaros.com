@@ -1,0 +1,11 @@
+{{ if true }}
+<div class="services cards">
+{{ range ( where .Site.RegularPages "Section" "==" "services" ) }}
+<div class="service card">
+<div class="icon h2">{{ (.Resources.GetMatch "icon.svg").Content | safeHTML }}</div>
+<h4>{{ .Title }}</h6>
+<p class="i mt1">{{ .Description }}</p>
+</div>
+{{ end }}
+</div>
+{{ end }}

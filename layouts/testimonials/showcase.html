@@ -1,0 +1,14 @@
+{{ if true }}
+<div class="testimonials">
+<div class="slides">
+{{ range ( where .Site.RegularPages "Section" "==" "testimonials" ) }}
+<div class="slide">
+<div class="testimonial">
+<h4>{{ .Title }}</h4>
+<p>{{ .Content }}</p>
+</div>
+</div>
+{{ end }}
+</div>
+</div>
+{{ end }}

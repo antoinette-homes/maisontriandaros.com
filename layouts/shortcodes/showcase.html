@@ -1,0 +1,5 @@
+{{ with .Site.GetPage (.Get 0) }}
+    {{ .Render "showcase" }}
+{{ else }}
+    errorf "The page at %s is not found to be showcased."
+{{ end }}

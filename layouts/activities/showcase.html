@@ -1,0 +1,10 @@
+{{ if true }}
+<div class="activities cards">
+{{ range ( where .Site.RegularPages "Section" "==" "activities" ) }}
+<div class="activity card">
+    <h4>{{ .Title }}</h4>
+    <p class="i">{{ .Description }}</p>
+</div>
+{{ end }}
+</div>
+{{ end }}

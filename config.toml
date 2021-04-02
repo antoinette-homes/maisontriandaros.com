@@ -1,0 +1,120 @@
+baseURL = "https://maisontriandaros.com/"
+languageCode = "en-us"
+title = "Maison triandaros"
+theme = "triandaros"
+
+disableKinds = ["taxonomyTerm", "categoryTerm"]
+
+[Params]
+process_css = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[languages.en]
+weight = 0
+languageName = "English"
+copyright = """Made with ❤ by Digital Marketing Impulse - Swiss-based digital marketing agency in La Neuveville - <a href="www.digitalmarketingimpulse.ch">www.digitalmarketingimpulse.ch</a>"""
+
+
+[languages.en.menu]
+[[languages.en.menu.main]]
+    identifier = "home"
+    name = "HOME"
+    url = "/#top"
+    weight = -100
+[[languages.en.menu.main]]
+    identifier = "about"
+    name = "ABOUT"
+    url = "/#about"
+    weight = -90
+[[languages.en.menu.main]]
+    identifier = "rooms"
+    parent = "about"
+    name = "ROOMS"
+    url = "/#rooms"
+[[languages.en.menu.main]]
+    identifier = "services"
+    name = "SERVICES"
+    url = "/#services"
+    weight = -80
+[[languages.en.menu.main]]
+    identifier = "gallery"
+    name = "GALLERY"
+    url = "/#gallery"
+    weight = -70
+[[languages.en.menu.main]]
+    identifier = "activities"
+    name = "ACTIVITIES"
+    url = "/#activities"
+    weight = -60
+[[languages.en.menu.main]]
+    identifier = "contact"
+    name = "CONTACT"
+    url = "/#contact"
+    weight = -50
+[[languages.en.menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 900
+[[languages.en.menu.reserve]]
+    identifier = "reservations"
+    name = "Reserve"
+    url = "/reservations/"
+    weight = 1000
+
+[languages.fr]
+weight = 10
+languageName = "Français"
+copyright = """Créé avec ❤ par Digital Marketing Impulse - Agence digitale Suisse à La Neuveville - <a href="www.digitalmarketingimpulse.ch">www.digitalmarketingimpulse.ch</a>"""
+
+
+[languages.fr.menu]
+[[languages.fr.menu.main]]
+    identifier = "home"
+    name = "ACCUEIL"
+    url = "/fr/#top"
+    weight = -100
+[[languages.fr.menu.main]]
+    identifier = "about"
+    name = "À PROPOS"
+    url = "/fr/#about"
+    weight = -90
+[[languages.fr.menu.main]]
+    identifier = "rooms"
+    parent = "about"
+    name = "CHAMBRES"
+    url = "/fr/#rooms"
+[[languages.fr.menu.main]]
+    identifier = "services"
+    name = "SERVICES"
+    url = "/fr/#services"
+    weight = -80
+[[languages.fr.menu.main]]
+    identifier = "gallery"
+    name = "GALERIE"
+    url = "/fr/#gallery"
+    weight = -70
+[[languages.fr.menu.main]]
+    identifier = "activities"
+    name = "ACTIVITÉS"
+    url = "/fr/#activities"
+    weight = -60
+[[languages.fr.menu.main]]
+    identifier = "contact"
+    name = "CONTACT"
+    url = "/fr/#contact"
+    weight = -50
+[[languages.fr.menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/fr/blog/"
+    weight = 900
+[[languages.fr.menu.reserve]]
+    identifier = "reservations"
+    name = "Réserver"
+    url = "/fr/reservations/"
+    weight = 1000

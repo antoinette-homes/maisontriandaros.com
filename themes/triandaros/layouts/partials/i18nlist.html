@@ -1,0 +1,11 @@
+{{ if .IsTranslated }}
+<div class="translations-wrapper row">
+    <ul class="translations flex-list">
+        {{ range .Translations }}
+        <li class="">
+            <a class="" href="{{ .RelPermalink }}">{{ .Lang }}</a>
+        </li>
+        {{ end}}
+    </ul>
+</div>
+{{ end }}

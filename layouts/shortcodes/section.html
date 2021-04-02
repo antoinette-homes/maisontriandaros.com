@@ -1,0 +1,9 @@
+<section class="row {{ if $.Get "bg-src" }}bg{{ end }}" {{ with .Get "height" }}style="height: {{ . }};"{{ end }}>
+{{- with .Get "bg-src" }}<img class="rellax" data-rellax-speed="-15" data-rellax-percentage="0.5" data-rellax-zindex="-100" src="{{ . }}" />{{ end }}
+{{- with .Inner }}
+{{- if $.Get "bg-src" }}<div class="inner">{{ end }}
+<a class="anchor" id="{{ $.Get "id" }}"></a>
+{{- . -}}
+{{- if $.Get "bg-src" }}</div>{{ end }}
+{{- end }}
+</section>
